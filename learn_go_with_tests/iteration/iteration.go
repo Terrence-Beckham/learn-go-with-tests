@@ -5,12 +5,11 @@ import "strings"
 func Repeat(character string, times int) string {
 	var repeated strings.Builder
 	for i := 0; i < times; i++ {
-		repeated.WriteString(  character)
+		repeated.WriteString(character)
 	}
 	return repeated.String()
 }
 
-
-func ContainsThisChar(char, sentence string) bool{
-	return   strings.ContainsAny(sentence, char)
+func ContainsThisChar(char, sentence string) bool {
+	return strings.ContainsAny(sentence, char)
 }
