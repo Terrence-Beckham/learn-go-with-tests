@@ -28,11 +28,9 @@ func TestCounter(t *testing.T) {
 				counter.Inc()
 				wg.Done()
 			}()
-
 		}
 		wg.Wait()
 		assertCounter(t, counter, wantedCount)
-
 	})
 
 }
